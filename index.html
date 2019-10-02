@@ -11,24 +11,30 @@
 <body>
     <header>
         <h1>Number Guessing Game</h1>
-        <p>Welcome!  I'm thinking of a number.  Your task is to guess it!</p>
+        <h2>Welcome!  I'm thinking of a number.  Your task is to guess it!</h2>
         <ul>
-            <li>The number is an integer between 1 and 20 <em>1 and 20 are possible numbers</em></li>
-            <li>You will have 4 guesses to get it right</li>
+            <li>The number is an integer between 1 and 20 <em>inclusive</em>.</li>
+            <li>You will have 4 guesses to get it right.</li>
             <li>After each guess, I will tell you if your guess was too high, too low, or just right!</li>
         </ul>
         <h2>Good Luck!  Let the guessing begin.</h2>
-    </header>
-    <section class='guess-game'>
+    </header>    
+    
+    <section id='active-play'>
+        <h3> <span id="hint"></span></h3>
         <label>Enter your guess: <input type='number' min='1' max='20' id="user-input"/></label>
         <button id="user-guess">Check My Guess</button>
     </section>
-    <section class='results'>
-        <p>Your guess of <span id="current-guess"></span> is <span id="hint">.</span></p>
-        <p>Guesses remaining: <span id="guesses-remaining"></span></p>
+
+    <section id='lose' class='hidden'>
+        <h1>Sorry, you are out of guesses.</h1>
+        <h2>Consider a binary search next time.</h2>
     </section>
 
-<!--Display of lose and win result-->
+    <section id='win' class='hidden'>
+        <h1>You Win!</h1>
+        <h2>You are either a great guesser or you conducted a successful and slightly lucky binary search!</h2>
+    </section>
 
     <script type="module" src="app.js"></script>
     <script type="module" src="compare-numbers.js"></script>

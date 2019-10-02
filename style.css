@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+
+header{
+
+}
+
+ul{
+    text-align: left;
+}
+
+.hidden{
+    visibility: hidden;
+}
