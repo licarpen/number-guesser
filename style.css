@@ -31,7 +31,7 @@ input{
 #win{
     background: #C8D6AF;
     width: 500px;
-    margin: 50px;
+    margin: auto;
     padding: 20px;
     border: 20px; goove #870058;
 }
@@ -44,7 +44,7 @@ input{
 #lose{
     background: #C8D6AF;
     width: 500px;
-    margin: 50px;
+    margin: auto;
     padding: 20px;
     border: 20px; goove #870058; 
 }
