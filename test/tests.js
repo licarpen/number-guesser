@@ -1,1 +1,1 @@
-import './some-file.test/js';
+import './compare-numbers.test.js';

@@ -6,12 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Number Guessing Game</title>
 </head>
-
 <body>
+    <header>
+        <h1>Number Guessing Game</h1>
+        <p>Welcome!  I'm thinking of a number.  Your task is to guess it!</p>
+        <ul>
+            <li>The number is an integer between 1 and 20 <em>1 and 20 are possible numbers</em></li>
+            <li>You will have 4 guesses to get it right</li>
+            <li>After each guess, I will tell you if your guess was too high, too low, or just right!</li>
+        </ul>
+        <h2>Good Luck!  Let the guessing begin.</h2>
+    </header>
+    <section class='guess-game'>
+        <label>Enter your guess: <input type='number' min='1' max='20' id="user-input"/></label>
+        <button id="user-guess">Check My Guess</button>
+    </section>
+    <section class='results'>
+        <p>Your guess of <span id="current-guess"></span> is <span id="hint">.</span></p>
+        <p>Guesses remaining: <span id="guesses-remaining"></span></p>
+    </section>
 
-    <script src="app.js"></script>
+<!--Display of lose and win result-->
+
+    <script type="module" src="app.js"></script>
+    <script type="module" src="compare-numbers.js"></script>
 </body>
 
 </html>
