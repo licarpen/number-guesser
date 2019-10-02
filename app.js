@@ -8,11 +8,11 @@ let winner = document.getElementById('win');
 let guessesRemaining = 4;
 let checkGuess = document.getElementById('user-guess');
 
-
 checkGuess.addEventListener('click', () => {  
     let userInput = document.getElementById('user-input');
     let userInt = parseInt(userInput.value, 10);
     const check = compareNumbers(userInt, randomNumber);
+    document.getElementById('user-input').value = '';
     if (check === 0){
         winner.classList.remove('hidden');
         activePlay.classList.add('hidden');
