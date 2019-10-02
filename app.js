@@ -14,8 +14,8 @@ checkGuess.addEventListener('click', () => {
     let userInt = parseInt(userInput.value, 10);
     const check = compareNumbers(userInt, randomNumber);
     if (check === 0){
-        activePlay.classList.add('hidden');
         winner.classList.remove('hidden');
+        activePlay.classList.add('hidden');
         return;
     }
     else if (check === 1 && guessesRemaining !== 1){

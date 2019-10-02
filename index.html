@@ -11,14 +11,16 @@
 <body>
     <header>
         <h1>Number Guessing Game</h1>
-        <h2>Welcome!  I'm thinking of a number.  Your task is to guess it!</h2>
+        <h3>Welcome!  I'm thinking of a number.  Your task is to guess it!</h3>
+    </header>
+    <section>
         <ul>
             <li>The number is an integer between 1 and 20 <em>inclusive</em>.</li>
             <li>You will have 4 guesses to get it right.</li>
             <li>After each guess, I will tell you if your guess was too high, too low, or just right!</li>
         </ul>
         <h2>Good Luck!  Let the guessing begin.</h2>
-    </header>    
+       </section>
     
     <section id='active-play'>
         <h3> <span id="hint"></span></h3>
@@ -33,7 +35,7 @@
 
     <section id='win' class='hidden'>
         <h1>You Win!</h1>
-        <h2>You are either a great guesser or you conducted a successful and slightly lucky binary search!</h2>
+        <h3>You are either a great guesser or you conducted a successful and slightly lucky binary search!</h3>
     </section>
 
     <script type="module" src="app.js"></script>
