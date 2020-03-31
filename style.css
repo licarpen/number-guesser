@@ -1,7 +1,7 @@
 body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #FFECCC;
+    background: rgb(204, 210, 245);
     color: #870058;
 }
 
@@ -16,30 +16,34 @@ ul{
 }
 
 button{
-    width: 75px;
-    height: 40px;
+    width: 125px;
+    height: 45px;
     border: groove #870058;
-    background: #F2D0A4;
+    background: rgb(174, 185, 247);
     font-style: bold;   
     margin: 20px; 
 }
+input{
+    width: 30px;
+    font-size: 24px;
+}
 
 #win{
-    background: #C8D6AF;
+    background: rgb(212, 221, 233);
     width: 500px;
-    margin: 50px;
+    margin: auto;
     padding: 20px;
-    border: 20px; goove #870058;
+    border: 20px goove #870058;
 }
 
 .hidden{
-    visibility: hidden;
+    display: none;
 }
 
 #lose{
-    background: #C8D6AF;
+    background: rgb(212, 221, 233);
     width: 500px;
-    margin: 50px;
+    margin: auto;
     padding: 20px;
-    border: 20px; goove #870058; 
+    border: 20px groove #870058; 
 }
